@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Love Story</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0000ff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hidden { display: none; }
+.red { background-color: red; color: white; }
+
+  </style>
+</head>
+<body>  <!-- Login Page -->  <div class="card" id="loginBox">
+    <h2>Fill these card to get your reword ❤️ 
+      
+      Only for Iman </h2>
+    <input type="text" id="name" placeholder="what's your name babe?">
+    <input type="text" id="birthday" placeholder="when is your lover was born ?">
+    <input type="text" id="love" placeholder="who is your lover? (Real name nihahahaha)">
+    <input type="text" id="color" placeholder="what's his favorite color?">
+    <br>
+    <button onclick="login()">Enter</button>
+  </div>  <!-- Page 1: Do you love sifo? -->  <div class="card hidden" id="question1">
+    <h2>Do you love Sifo?</h2>
+    <button onclick="chooseLove(true)">Yes</button>
+    <button onclick="chooseLove(false)">No</button>
+  </div>  <!-- Page 1b: No message -->  <div class="card hidden" id="noLove">
+    <p>Mn nyyyyyyyytek</p>
+    <button onclick="backToQuestion1()">blghaaaaaaat ana asln kanbghik rje3ni</button>
+  </div>  <!-- Page 2: Really? -->  <div class="card hidden" id="question2">
+    <h2>Really?</h2>
+    <button onclick="chooseReally(true)">Yes</button>
+    <button onclick="chooseReally(false)">No</button>
+  </div>  <!-- Page 2b: WTF message -->  <div class="card hidden" id="wtfPage">
+    <p>Wtf 😒 shame on u babe 😘 but still love you</p>
+    <button onclick="backToQuestion2()">ooopsi 💕la rah so2 tafahom 7bibi ya aghla ma amlik amir dyali booooooo7di ana 🥺gha rje3ni anjaweb sa7i7 had lmera trust me bibi🥲👉🏻👈🏻
+ </button>
+  </div>  <!-- Page 3: suuuuuuure? -->  <div class="card hidden" id="question3">
+    <h2>Suuuuuuure? atjawbi sa7i7? 😗</h2>
+    <button class="red" onclick="chooseSure()">No</button>
+  </div>  <!-- Page 3b: I knew it -->  <div class="card hidden" id="iknewIt">
+    <p>I knew it 😭😔💔</p>
+    <button onclick="showPrank()">💕Sorry sifo akhir mera bsse7 i promise muaah💕</button>
+  </div>  <!-- Page 3c: Prank reward -->  <div class="card hidden" id="prankPage">
+    <p>Ha ha prank here is your reward 🎁</p>
+    <button onclick="showMainMessage()">Reward</button>
+  </div>  <!-- Main Message -->  <div class="card hidden" id="mainMessage">
+    <p>Salaaam iman 💕 i miss you a lot ,to be honest i miss dima like dimaaa ,mhm ig rah l9iti kifach dkhli lmessage mmmmm idk wach ghan3e9edha ola la mais ba9i kanfeker kifach nkhlik twessli lhad lmessage ma3lina db .<br><br>
+Awal 7aja bghitek ntleb mnek tsam7ini 3la akbar o asghar ghalat khrej mni tasarofan ola kalaman ola ay 7aja mhm im sooo sorry wakha it need kter mn sorry ka kalima wlkn hiya li kan3ref liha koun kant chi 7aja ngoulha lik ola ndirha kter mn kelma dyal sorry rah ghandirha mhm i apologize to you iman <br><br>
+Taniyan kanbghik o bzaf like matssewerich bzaf dyali 9edach 💕 kangoulha o kan9ssedha maghadich ntewel ftaniyan because rah kelma ghat3eber lik 3la koulchi <br>
+I love you imanti ❤️<br><br>
+Talilta fach khteftek 💔 rah you made me mad khlitini kantsena 7da fst o nti gelti liya jibni mn medrassa why khlefti lwa3d oooof you know bli ghanji o ma3endi walo fost nhar 🥺💔 o gelti liya ntla9aw f l2a9was o gelti liya angoul lik imta tkhrej keep hurting o ana kanchoufek gedami katsnay ok mli bghiti tmchi dezt mn hdaki o maditekch because im not your safe place machi awal mera rah tani mera so mli khteftek o mchina tal ensa bghit nfehm why choose others over me you know i won't hurt you ila jiti 3endi wakha mkhassmin you know i love you o bkiti tri9 kolha 🥲<br><br>
+Ana bkit chwiya mais khass nsket cause chouha nbkiw bjouj ma3reftch lach b9iti katbki bdebt mais im sorry 🥺 rah tri9 koulha o ana saket because i didn't know what to say it hurts kter mais nssket 7ssen nti madwitich wlkn bkiti o 3reft bli we all hurt fdik le7da but thank you for choosing me wakha bzz 💔💔💔<br><br>
+Im mad wlkn im not because you choose indrive over me ta fdik le7da wlkn mhm akhir 7aja thanks for majhoudatek framadan o 9bel ramadan o be3do i love you bzaaf 🥺 kanbghit ntleb mnek sma7a 🥲👉🏻👈🏻 again Bizou mon petit bébé 💕😘 <br><br> btw rah dakchi li f jwa rah dyalek o mbrok l3id again and rah fiha 300dh chri chi cadaeux lmamak o 100dh if want to get me something for my birthday and pleaaaaaaas matfoutich 100dh 
+</p>
+  </div>  <script>
+    function login() {
+      var name = document.getElementById('name').value.toLowerCase();
+      var birthday = document.getElementById('birthday').value;
+      var love = document.getElementById('love').value.toLowerCase();
+      var color = document.getElementById('color').value.toLowerCase();
+
+      if(name === 'iman' && birthday === '21/03/2005' && love === 'sifo' && color === 'blue') {
+        document.getElementById('loginBox').classList.add('hidden');
+        document.getElementById('question1').classList.remove('hidden');
+      } else {
+        alert('❌ Wrong login details');
+      }
+    }
+
+    function chooseLove(answer) {
+      document.getElementById('question1').classList.add('hidden');
+      if(answer) {
+        document.getElementById('question2').classList.remove('hidden');
+      } else {
+        document.getElementById('noLove').classList.remove('hidden');
+      }
+    }
+
+    function backToQuestion1() {
+      document.getElementById('noLove').classList.add('hidden');
+      document.getElementById('question1').classList.remove('hidden');
+    }
+
+    function chooseReally(answer) {
+      document.getElementById('question2').classList.add('hidden');
+      if(answer) {
+        document.getElementById('question3').classList.remove('hidden');
+      } else {
+        document.getElementById('wtfPage').classList.remove('hidden');
+      }
+    }
+
+    function backToQuestion2() {
+      document.getElementById('wtfPage').classList.add('hidden');
+      document.getElementById('question2').classList.remove('hidden');
+    }
+
+    function chooseSure() {
+      document.getElementById('question3').classList.add('hidden');
+      document.getElementById('iknewIt').classList.remove('hidden');
+    }
+
+    function showPrank() {
+      document.getElementById('iknewIt').classList.add('hidden');
+      document.getElementById('prankPage').classList.remove('hidden');
+    }
+
+    function showMainMessage() {
+      document.getElementById('prankPage').classList.add('hidden');
+      document.getElementById('mainMessage').classList.remove('hidden');
+    }
+  </script></body>
+</html>
